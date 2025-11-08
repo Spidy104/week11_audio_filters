@@ -1,0 +1,45 @@
+# Python bytecode and build artifacts
+__pycache__/
+*.py[oc]
+*.pyd
+build/
+dist/
+wheels/
+*.egg-info/
+
+# Virtual environments
+.venv/
+.env/
+venv/
+env/
+
+
+# Jupyter and notebooks
+*.ipynb
+.ipynb_checkpoints/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Package manager locks (optional - comment out if you want to commit)
+# uv.lock
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+
+week11_audio_filters.egg-info/
+src/__pycache__/
+__pycache__/
+uv.lock
+.python-version

@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["main", "app"]
+
+[tool.setuptools.packages.find]
+# Include the in-repo package named `src` and its subpackages
+where = ["."]
+include = ["src*"]
+[project]
+name = "week11-audio-filters"
+version = "0.1.0"
+description = "Audio filtering demonstration with FIR and IIR filters"
+readme = "README.md"
+requires-python = ">=3.13"
+authors = [
+    {name = "Dibyojyoti Bhattacharjee", email = "scientistdibs@outlook.com"}
+]
+keywords = ["audio", "signal-processing", "filters", "fir", "iir", "dsp", "streamlit"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Topic :: Multimedia :: Sound/Audio :: Analysis",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "librosa>=0.11.0",
+    "matplotlib>=3.10.7",
+    "scipy>=1.16.3",
+    "soundfile>=0.13.1",
+    "streamlit>=1.51.0",
+]
+
+[project.scripts]
+audio-filter-demo = "main:main"
+audio-filter-app = "app:run_app"
+generate-audio = "src.generate:main"
+
+[project.urls]
+Homepage = "https://github.com/Spidy104/week11-audio-filters"
+Repository = "https://github.com/Spidy104/week11-audio-filters"
+Documentation = "https://github.com/Spidy104/week11-audio-filters#readme"
+Issues = "https://github.com/Spidy104/week11-audio-filters/issues"
