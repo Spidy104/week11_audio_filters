@@ -354,7 +354,7 @@ Defined in `pyproject.toml` under `[project.scripts]`:
 
 ### Theory & Concepts
 
-See **[docs/theory.md](docs/theory.md)** for comprehensive explanations:
+See **[theory.md](theory.md)** for comprehensive explanations:
 
 - Audio signal fundamentals and psychoacoustics
 - FIR vs IIR filter theory and design trade-offs
